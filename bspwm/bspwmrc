@@ -2,6 +2,10 @@
 
 #Autostart
 pgrep -x sxhkd > /dev/null || sxhkd &
+picom $
+feh --bg-fill --randomize ~/Wallpapers &
+xrandr --rate 60 &
+$HOME/.config/polybar/launch.sh &
 
 #Workspaces
 bspc monitor -d 1 2 3 4 5
